@@ -1,0 +1,52 @@
+body {
+  background-image: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.center{
+  background-color: rgba(100, 100, 100, .5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid gray;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+form{
+  color: black;
+  font-weight: bold;
+}
+label[for=firstName], label[for=lastName],
+label[for=phoneNumber], label[for=emailAddress],
+label[for=password], label[for=idNumber]{
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+input[type=text]{
+  padding: 6px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 1px;
+  color: black;
+}
+input[type=password]{
+  padding: 6px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 1px;
+  color: black;
+}
+input[type=number]{
+  padding: 6px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 1px;
+  color: black;
+}
+button{
+  font-size: 16px;
+}

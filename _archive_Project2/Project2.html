@@ -1,0 +1,98 @@
+<!--
+Jirassaya Uttarapong aka CodeJirachi
+Assignment 2
+IT 202 Deek
+-->
+
+<!--
+Validation MUST take place in your JavaScript via REGEX for patterns. No
+validation should be done via your <input> element/tag attribute(s) (i.e., patterns,
+length, number, email, etc.).
+
+first validate
+  -username
+  -Password
+  -userID
+  -user phoneNumber
+  -email (if checkbox checked)
+then verify
+OUPUT: Simple welcome message consisting of the Salesperson’s name (first and last)
+and the Transaction chosen from the dropdown menu or message indicating that the
+specific salesperson cannot be found.
+
+Make sure to test you program with a variety of valid and invalid input to ensure that
+your program is properly validating the data, properly verifying the salesperson and that
+all alerts are working as described.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--external stylesheet-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Project 2</title>
+
+  <script type=text/javaScript src="script.js"></script>
+</head>
+
+<body>
+<div class="center">
+  <h1>The Story Keeper Bookstore</h1>
+  <form>
+    <!--four text fields:-->
+    <!--salesperson first and last name; text field-->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="ex: Mary" required> REQUIRED
+      <br>
+      <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="ex: Sue" required> REQUIRED
+      <br>
+      <br>
+    <!--phone number as a text field-->
+    <label for="phoneNumber">Phone #:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="ex: 973-999-0000" required> REQUIRED
+      <br>
+      <br>
+      <!--email as a text field-->
+      <label for="emailAddress">Email:</label>
+      <input type="text" id="emailAddress" name="emailAddress" placeholder="ex: anemail@njit.edu">
+        <label id="required" hidden>REQUIRED</label>
+      <br>
+      <br>
+      <!--checkbox:  for indicating an email confirmation for the customer if
+      requested-->
+      <input type="checkbox" id="emailConfirm" name="emailConfirm" onchange="reqCheck()"> Check this box for an email confirmation
+        <br>
+        <br>
+      <!--password field-->
+      <label for="password">Password:</label>
+      <input type="password" id="passwd" name="password" placeholder="password" required> REQUIRED
+      <br>
+      <br>
+      <!--idNumber as numeric field-->
+      <label for="idNumber">ID #:</label>
+      <input type="number" id="idNumber" name="idNumber" placeholder="ex: 11111" required="required"> REQUIRED
+      <br>
+      <br>
+    <!--dropdown: options on the drop-down menu do not need to be implemented.-->
+      <label for="transType">Transaction Type:</label>
+      <select id="transType" name="transType">
+        <option value="transType1">Search A Book Seller's Accounts</option>
+        <option value="transType2">Customer's Book Purchase</option>
+        <option value="transType3">Customer's Book Return</option>
+        <option value="transType4">Update A Customer's Book Order</option>
+        <option value="transType5">Cancel A Customer's Book Order</option>
+        <option value="transType6">Search for a Book</option>
+        <option value="transType7">Create A New Customer Account</option>
+      </select>
+      <br>
+      <br>
+
+    <!--buttons-->
+    <button type="button" onclick="validate()">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</div>
+</body>
+</html>

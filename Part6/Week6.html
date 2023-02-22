@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #text{
+        font-size: 16pt;
+        color: orange;
+        font-family: Arial;
+        position: absolute;
+        left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="text" onmouseover="change()" onmouseout="original()">
+      This is some text, woo! Watch it change!
+    </div>
+
+    <script type="text/javascript">
+      function change(stuff){
+          text.style.fontSize='30pt';
+          text.style.color='purple';
+          text.style.fontFamily='Times';
+          text.style.left='500px'
+      }
+      function original(stuff){
+        text.style.fontSize='16pt';
+        text.style.color='orange';
+        text.style.fontFamily='Arial';
+        text.style.left='10px'
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 5 Participation</title>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<img src="https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg" onclick="sunSwitch();" id="sun"/>
+	</body>
+
+	<script type="text/javascript">
+		function sunSwitch() {
+			var sunrise = "https://www.photopills.com/sites/default/files/tutorials/2020/sunrise-cover.jpg";
+      var sunset = "https://images.unsplash.com/photo-1616036740257-9449ea1f6605?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwYmVhY2h8ZW58MHx8MHx8&w=1000&q=80";
+			var sunID = document.getElementById("sun");
+
+			sunID.src = (sunID.src === sunrise) ? sunset : sunrise;
+		}
+	</script>
+</html>

@@ -1,0 +1,51 @@
+body {
+  background-image: url("https://static01.nyt.com/images/2017/05/11/t-magazine/bookstore-slide-2MCD/bookstore-slide-2MCD-superJumbo.jpg?quality=75&auto=webp");
+}
+.center{
+  background-color: rgba(51, 160, 51, .5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid green;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  color: red;
+}
+form{
+  color: yellow;
+  font-weight: bold;
+}
+label[for=firstName], label[for=lastName],
+label[for=phoneNumber], label[for=emailAddress],
+label[for=password], label[for=idNumber]{
+  display: inline-block;
+  width: 150px;
+}
+
+input[type=text]{
+  padding: 6px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 1px;
+  color: darkred;
+}
+input[type=password]{
+  padding: 6px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 1px;
+  color: darkred;
+}
+input[type=number]{
+  padding: 6px;
+  width: 500px;
+  font-size: 14px;
+  border-radius: 1px;
+  color: darkred;
+}
+button{
+  font-size: 16px;
+}
