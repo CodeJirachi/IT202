@@ -1,0 +1,117 @@
+<!--
+Jirassaya Uttarapong
+Assignment 1
+IT 202 Deek
+-->
+
+<!--
+Overview: Create a user login page (using HTML and CSS) for a receptionist at a local
+  Pet Hotel called Happy Tails Hotel (HTH).
+
+  Suppose that you have been hired to design the new web-based interface for a local Pet
+  Hotel, Happy Tails Hotel (HTH).  A receptionist will be given a commission for
+  bookings and therefore for each pet stay transaction they will need to login to their
+  account, thus making a connection between the receptionist and the pet owner.  The
+  interface gives receptionist access to their accounts where they can book a stay, cancel a
+  stay, request additional perks during a stay, cancel perks, change perks, or create a new
+  client account.
+  Program Design and Implementation
+  Design the HTML interface. The interface should have four text fields, (for the
+  receptionist’s name (first and last), the receptionist’s phone number and receptionist’s
+  email address, a password field (for salesperson’s password), a numeric field (for
+  salesperson’s ID), a checkbox for indicating an email confirmation for the pet owner if
+  requested, a drop-down menu allowing the receptionist to indicate what type of
+  transaction they wish to perform, and buttons as input elements as shown in the figure
+  below. Be sure to give each input element a unique name attribute.
+  The options on the drop-down menu do not need to be implemented.
+  Below is an example to illustrate the HTML form requirements.  You must tailor the
+  page to your own style, but make sure the form has all key elements illustrated in my
+  form and described above.  The form should have a background (mine is a depiction of
+  dogs in a doghouse) with the form laid on top of your chosen background.
+
+  Once you have created the form using a drop-down menu, I would like you
+    to recreate the form using:
+       Radio buttons
+       Checkboxes
+    for the options found in the dropdown menu.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--external stylesheet-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>HTH</title>
+</head>
+
+<body>
+<div class="center">
+  <h1>Happy Tails Hotel</h1>
+  <form action="submission.php" method="get" name="project1" id="project1">
+    <!--four text fields:-->
+
+    <!--receptionist first and last name; text field-->
+      <label for="firstName">Receptionist's First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="ex: Mary" required>REQUIRED
+      <br>
+      <br>
+      <label for="lastName">Receptionist's Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="ex: Sue" required>REQUIRED
+      <br>
+      <br>
+      <!--password field-->
+      <label for="password">Receptionist's Password:</label>
+      <input type="password" id="password" name="password" placeholder="password" required>REQUIRED
+      <br>
+      <br>
+      <!--idNumber as numeric field-->
+      <label for="idNumber"> Receptionist's ID #:</label>
+      <input type="number" id="idNumber" name="idNumber" placeholder="ex: 11111" required>REQUIRED
+      <br>
+      <br>
+      <!--phone number as a text field-->
+      <label for="phoneNumber">Phone #:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber"placeholder="ex: 973-999-0000" required>REQUIRED
+      <br>
+      <br>
+      <!--email as a text field-->
+      <label for="emailAddress">Email:</label>
+      <input type="text" id="emailAddress" name="emailAddress" placeholder="ex: anemail@njit.edu">
+      <br>
+      <br>
+      <!--checkbox:  for indicating an email confirmation for the customer if
+      requested-->
+      <input type="checkbox" id="emailConfirm" name="emailConfirm"> Check this box for an email confirmation
+      <br>
+      <br>
+
+    <!--dropdown: options on the drop-down menu do not need to be implemented.
+    <label for="transType">Transaction Type:</label>
+    <select id="transType" name="transType">
+      <option value="transType1">Search A Receptionist's Accounts</option>
+    </select>
+    <br>
+    <br>-->
+
+    <!--recreate: Radio buttons
+      <label for="transType">Select a Transaction:</label><br>
+      <input type="radio" id="transType1" name="transType1" value="transType1">
+      <label for="transType1">Search A Receptionist's Accounts</label>
+      <br>
+      -->
+
+    <!--recreate: Checkboxes-->
+    <label for="transType">Select a Transaction:</label>
+    <br>
+      <input type="checkbox" id="transType1" name="transType1" value="transType1">
+      <label for="transType1">Search A Receptionist's Accounts</label>
+      <br>
+      <br>
+
+    <!--buttons-->
+    <button type="submit" form="project1" value="Submit">Submit</button>
+    <button type="reset" form="project1" value="Reset">Reset</button>
+  </form>
+</div>
+</body>
+</html>
