@@ -18,31 +18,33 @@ form{
   color: black;
   font-weight: bold;
 }
-label[for=firstName], label[for=lastName],
-label[for=phoneNumber], label[for=emailAddress],
-label[for=password], label[for=idNumber]{
+label{
   display: inline-block;
-  width: 200px;
+  width: 120px;
   text-align: right;
 }
 
+label[for=required] {
+  text-align: left;
+	color: yellow;
+}
 input[type=text]{
   padding: 6px;
-  width: 500px;
+  width: 400px;
   font-size: 14px;
   border-radius: 1px;
   color: black;
 }
 input[type=password]{
   padding: 6px;
-  width: 500px;
+  width: 400px;
   font-size: 14px;
   border-radius: 1px;
   color: black;
 }
 input[type=number]{
   padding: 6px;
-  width: 500px;
+  width: 400px;
   font-size: 14px;
   border-radius: 1px;
   color: black;
