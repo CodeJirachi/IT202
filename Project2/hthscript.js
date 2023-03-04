@@ -1,5 +1,21 @@
 //<script type="text/javaScript">
 function validate(){
+
+	//array of 10 receptionists
+	//each receptionist has 6 fields
+	let receptionistArray = [
+		['Jira', 'Uttarapong', 'P@ssword1', 123456, '123 456 7890', 'ju35@njit.edu'],
+		['Tom', 'Ridgewood', 'Elf23!', 222222, '973 333 4444', 'tr22@njit.edu'],
+		['Mary', 'Sue', 'Thing12$', 333333, '201 022 2787', 'ms20@njit.edu'],
+		['Capt', 'Crunch', 'Flakes@3', 444444, '321 406 8890', 'cc44@njit.edu'],
+		['Tom', 'Jerry', 'mouseC@t1', 555555, '609 666 6666', 'tj60@gmail.com'],
+		['Mister', 'Rogers', 'N3&', 666666, '245 678 9000', 'mr3@njit.edu'],
+		['Cat', 'Woman', 'Me0w^%', 777777, '609 343 2345', 'cw60@njit.edu'],
+		['Matt', 'Person', 'Password1!', 888888, '201-224-5656', 'mp20@njit.edu'],
+		['Jiggly', 'Poof', 'P0k3m!n', 999999, '340-700-9000', 'jp34@njit.edu'],
+		['Dude', 'Broseph', 'Cap78$', 000000, '124 245 3679', 'db12@gmail.com'],
+	];
+
   //regex: letters
   var firstName = document.getElementById("firstName").value;
   var firstNameRegex = new RegExp("^[a-zA-Z]+$");
@@ -74,9 +90,6 @@ function validate(){
 	 document.getElementById("emailConfirm").focus();
  }
 }
-	else{
-		//verify
-	}
 
 }
 //if checkbox unchecked, email not required and does not display REQUIRED
