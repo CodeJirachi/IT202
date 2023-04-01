@@ -92,8 +92,11 @@ New Client Account.).
       <br>
       <br>
       <!--idNumber as numeric field-->
+      <!--comment: no validation should be done via input element (here, type is number)
+          status: changed type to text 
+      -->
       <label for="idNumber"> Receptionist's ID #:</label>
-      <input type="number" id="idNumber" name="idNumber" placeholder="ex: 123456" required>
+      <input type="text" id="idNumber" name="idNumber" placeholder="ex: 123456" required>
       <label for="required">REQUIRED</label>
       <br>
       <br>
